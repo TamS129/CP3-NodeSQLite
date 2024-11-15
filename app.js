@@ -1,3 +1,9 @@
+/*
+  Name: Tamara Slone
+  Date: November 12,2024
+  This is the api that connects all of my database to the website.
+*/
+
 'use strict';
 
 const express = require('express');
@@ -158,26 +164,29 @@ app.post('/games', async (req, res) => {
     }
 });
 
-// Endpoint for fetching all consoles
+
 app.post('/consoles', async (req, res) => {
+
     try {
         const db = await getDBConnection();
         const consoles = await db.all(`SELECT * FROM Console`);
         await db.close();
         res.json({ success: true, consoles });
-    } catch (error) {
+    } 
+    catch (error) {
         res.status(500).json({ error: 'Cannot fetch consoles' });
     }
 });
 
 
-app.post('/stores', async (req, res) => { // Corrected parameter order
+app.post('/stores', async (req, res) => { 
     try {
         const db = await getDBConnection();
         const stores = await db.all(`SELECT * FROM Store`);
         await db.close();
         res.json({ success: true, stores });
-    } catch (error) {
+    } 
+    catch (error) {
         res.status(500).json({ error: `Cannot fetch stores.` });
     }
 });
@@ -191,8 +200,9 @@ app.get('/products/company/:company', async (req, res) => {
         const consoles = await db.all(`SELECT * FROM Console WHERE Company = ?`, [company]);
 
         await db.close();
-        res.json({ games, consoles }); // Return both games and consoles for the company
-    } catch (error) {
+        res.json({ games, consoles }); 
+    } 
+    catch (error) {
         res.status(500).json({ error: 'Cannot retrieve company products' });
     }
 });
@@ -213,7 +223,7 @@ app.get('/api/game/:productId', async (req, res) => {
         if (product && productDesc) {
             res.json({
                 success: true,
-                product: { ...product, ...productDesc }, // Merged game/console and product data
+                product: { ...product, ...productDesc }, 
                 reviews
             });
         } else {
@@ -226,7 +236,7 @@ app.get('/api/game/:productId', async (req, res) => {
     }
 });
 
-// Endpoint for fetching console details by product ID
+
 app.get('/api/console/:productId', async (req, res) => {
     const productID = req.params.productId;
 
@@ -243,7 +253,7 @@ app.get('/api/console/:productId', async (req, res) => {
         if (product && productDesc) {
             res.json({
                 success: true,
-                product: { ...product, ...productDesc }, // Merged game/console and product data
+                product: { ...product, ...productDesc }, 
                 reviews
             });
         } else {
