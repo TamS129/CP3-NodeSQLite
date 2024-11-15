@@ -1,0 +1,63 @@
+<!--/*
+  Name: Tamara Slone
+  Date: November 09,2024
+  This is the page that displays all of the stores for this vintage video game shop.
+*/-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel ="stylesheet" href = "styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+        <title>Stores Near You</title>
+
+        </head>
+    
+    <body>
+
+        <header>
+
+            <img id = "logo" src = '\images\Retrogradelogo.png' alt = "Retrograde Gaming logo.">
+            <nav>
+
+                <ul>
+                    <li><a href = 'index.html'>Home</a></li>
+                    <li><a href = 'storeconsoles.html'>Consoles</a></li>
+                    <li><a href = 'storegames.html'>Games</a></li>
+                    <li><a href = 'stores.html'>Stores</a></li>
+                </ul>
+
+            </nav>
+    </header>
+
+    <main>
+
+        <h2>Our Stores</h2>
+        <p>Check out our stores below!</p>
+
+        <div id="store-list">
+                       
+            <template id="store-template">
+
+                <div class="store-item">
+                  <h3 class="store-location"></h3>
+                  <p class="store-address"></p>
+                  <p class="store-phone"></p>
+                </div>
+
+            </template>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>Retrograde Logo was created in Wix. All Images have been adopted from Adobe Stock.</p>
+    </footer>
+    
+    <script src="storelist.js"></script> 
+</body>
+</html>

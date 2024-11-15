@@ -1,0 +1,427 @@
+<!--/*
+  Name: Tamara Slone
+  Date: November 09,2024
+  This is the CSS styling pages for all of my sites. Each are seperated by what they affect.
+*/-->
+
+/* GENERAL PAGE LAYOUT STYLING */
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #fff;
+    background-color: #1a1a1d;
+    background-image: url('/images/backgroundimage.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    font-style: none;
+}
+
+#logo {
+    width: 18%; 
+    height: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li {
+    padding: 10px 20px;
+    background-color: #ff007f !important;
+    color: white !important;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li:hover {
+    background-color: white !important;
+    color: #ff007f !important;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+
+
+h2 {
+    font-family: "Tourney", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2em;
+    color: #ff007f;
+    margin-top: 40px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ae00b4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+div {
+    border: 3px solid #ff007f; 
+    padding: 20px;
+    box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+}
+
+
+
+/* HOME PAGE STYLING */
+#games, #Consoles {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    color: #ddd;
+    border: 3px solid #ff007f;  
+    box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainPage {
+    display: flex; 
+    align-items: center; 
+    padding: 20px;
+    gap: 20px; 
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#checkout-store {
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 10px;
+    border: 3px solid #ff007f; 
+    box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f; 
+}
+
+#example-store {
+    width: 50%; 
+    height: auto; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+}
+
+#store-button, #game-button, #console-button  {
+    background-color: #ff007f; 
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 20px; 
+}
+
+button:hover {
+    background-color: #d6006e;
+}
+
+
+#store-button a {
+    color: white; 
+    text-decoration: none; 
+}
+#game-button a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#console-button a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#text-content {
+    max-width: 50%; 
+}
+
+#text-content h2 {
+    font-size: 2em;
+    margin: 0 0 10px;
+}
+
+#text-content p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+#mainpgImage {
+    width: 50%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+@media (max-width: 768px) {
+    #mainPage {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #text-content, #mainpgImage {
+        max-width: 80%; 
+    }
+}
+
+#product-section {
+    display: flex;
+    gap: 20px; 
+    max-width: 80%; 
+    margin: 20px auto;
+}
+
+#games, #Consoles {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; 
+    color: #ddd;
+    text-align: center;
+    border: 3px solid #ff007f; 
+    box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f; 
+}
+
+#games img, #Consoles img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+footer {
+    font-size: 8px;
+    padding: 20px;
+    color: #e0e0e0;
+    background-color: #000000;
+}
+
+
+/*STORE NAVAGATION LAYOUT*/
+
+#storeNav {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+#storeNav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; 
+    width: 80%; 
+}
+
+#storeNav li {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-grow: 1; 
+}
+
+
+#storeNav button {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 15px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    transition: transform 0.2s, opacity 0.2s; 
+    width: 120px; 
+    height: 120px; 
+}
+
+
+#storeNav button img {
+    width: 120px; 
+    height: 120px; 
+    object-fit: contain; 
+    display: block; 
+}
+
+
+#storeNav button:hover {
+    opacity: 0.8; 
+    transform: scale(1.05); 
+}
+
+
+#storeNav button:focus {
+    outline: none; 
+}
+
+
+
+.product-item {
+    position: relative;
+    width: 200px; 
+    height: 300px; 
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    display: inline-block !important;
+    visibility: visible !important;
+    vertical-align: top; 
+}
+
+.product-item h3, 
+.product-item p, s
+.product-item button {
+    color: black; 
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.product-details {
+    color: black; 
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    max-width: 500px; 
+    width: 90%; 
+}
+
+
+.product-item:hover .product-details {
+    display: block;
+}
+
+.product-title, .product-price, .product-company {
+    margin: 5px 0;
+}
+
+#productDetails .close-button .close-icon {
+    width: 25px; 
+    height: 25px;
+}
+
+#productDetails .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1100; 
+}
+
+
+
+/*STORE LISTING STYLING*/
+#store-list {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    color: black; 
+}
+
+.store-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.store-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.store-item p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
